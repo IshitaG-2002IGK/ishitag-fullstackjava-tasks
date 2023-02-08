@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 40px 0 40px 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        background-image: url("images/homebg.jpg");
+
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", "Helvetica Neue", Arial, sans-serif;
+      }
+
+      main {
+        background-color: white;
+        padding: 10px 40px 40px 40px;
+        display: block;
+        text-align: left;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 10px;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 40px;
+        color: #191516;
+        font-weight: bold;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+      }
+
+      #name,
+      #email,
+      #number,
+      #dropdown {
+        outline: none;
+        width: 100%;
+        padding: 7px;
+        font-size: 16px;
+        border: 1px solid #dee2e6;
+        border-radius: 3px;
+        background-color: white;
+        box-sizing: border-box;
+      }
+
+      #dropdown,
+      option {
+        outline: none;
+      }
+
+      select {
+        padding: 7px;
+      }
+
+      textarea {
+        display: block;
+      }
+
+      .form-group {
+        padding: 8px 0;
+        margin-bottom: 2px;
+      }
+
+      .form-group > label {
+        margin-bottom: 8px;
+        color: #00337c;
+        display: block;
+        font-weight: 500;
+      }
+
+      [type="checkbox"] + label > span,
+      [type="radio"] + label {
+        font-size: 16px;
+      }
+
+      [type="checkbox"],
+      [type="radio"] {
+        margin: 0 8px 0 0;
+        box-sizing: border-box;
+        min-width: 18px;
+        min-height: 18px;
+      }
+
+      /*hide the original checkbox and radio button*/
+
+      [type="checkbox"],
+      [type="radio"] {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .radio-group,
+      .checkbox-group {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      [type="radio"] + label {
+        margin: 0 5px 0 0;
+        font-size: 16px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      [type="checkbox"] + label {
+        margin: 0 5px 0 0;
+        font-size: 16px;
+        position: relative;
+        cursor: pointer;
+      }
+
+      /* this is the custom box for the checkbox*/
+
+      [type="checkbox"] + label::before {
+        content: "";
+        min-width: 18px;
+        min-height: 18px;
+        position: absolute;
+        left: -26px;
+        border-radius: 3px;
+        /* top: 5px; */
+        background-color: #eee;
+        transition: all 0.4s;
+      }
+      /* svg thingie */
+
+      [type="checkbox"] + label svg {
+        position: absolute;
+        width: 28px;
+        left: -31px;
+        top: -5px;
+      }
+
+      [type="checkbox"] + label svg polyline {
+        stroke: white;
+        stroke-width: 8;
+        fill: none;
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        transition: stroke-dashoffset 0.4s;
+      }
+
+      [type="checkbox"]:checked + label::before {
+        background-color: #00337c;
+      }
+
+      [type="checkbox"]:checked + label svg polyline {
+        stroke-dashoffset: 0;
+      }
+
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        height: 200px;
+        resize: none;
+        padding: 4px;
+        font-size: 16px;
+        border: 1px solid #dee2e6;
+      }
+
+      button {
+        width: 100%;
+        display: block;
+        height: 40px;
+        background-color: #00337c;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        box-sizing: border-box;
+      }
+
+      #description {
+        text-align: center;
+        font-style: italic;
+        margin-top: -10px;
+      }
+      [type="radio"] + label::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background-color: #eee;
+        left: -27px;
+        top: -1px;
+        width: 20px;
+        height: 20px;
+        transition: all 0.4s;
+      }
+
+      [type="radio"]:checked + label::before {
+        box-shadow: inset 0 0 0 6px #191516;
+      }
+
+      @media (max-width: 540px) {
+        main {
+          max-width: 380px;
+        }
+      }
+      @media (max-width: 460px) {
+        main {
+          max-width: 280px;
+        }
+        h1 {
+          font-size: 32px;
+        }
+        #description {
+          font-size: 15px;
+        }
+        form {
+          font-size: 18px;
+        }
+        #name,
+        #email,
+        #number,
+        #dropdown,
+        textarea {
+          font-size: 12px;
+        }
+        [type="radio"] + label,
+        [type="checkbox"] + label > span {
+          font-size: 15px;
+        }
+      }
+
+      @media (max-width: 375px) {
+        main {
+          max-width: 260px;
+          padding: 10px 30px 30px 40px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        #description {
+          font-size: 12px;
+        }
+        form {
+          font-size: 15px;
+        }
+        #name,
+        #email,
+        #number,
+        #dropdown,
+        textarea {
+          font-size: 12px;
+        }
+        [type="radio"] + label,
+        [type="checkbox"] + label > span {
+          font-size: 12px;
+        }
+        button {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 320px) {
+        main {
+          max-width: 220px;
+        }
+      }
+
+      @media (max-width: 280px) {
+        main {
+          max-width: 180px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+
+      <body>
+        <main style="width: 4300px">
+          <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">
+              Thank you for taking your valuable time to give us feeback!
+            </p>
+          </header>
+          <form id="survey-form">
+            <div class="form-group">
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="number" id="email-label">Phone Number</label>
+              <input
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="age" id="number-label"
+                >How many FootBros product have you bought?</label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="1"
+                max="99"
+                placeholder="Enter the count"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="occupation">Select your style</label>
+              <select name="occupation" id="dropdown">
+                <option selected disabled value>
+                  Select yout style approach
+                </option>
+                <option value="student">Formals</option>
+                <option value="full-time-job">Retro</option>
+                <option value="part-time-job">Funky</option>
+                <option value="prefer-to-not-say">Traditional</option>
+                <option value="full-time-job">Tradtional-ethnic</option>
+                <option value="part-time-job">Hippie cool</option>
+                <option value="prefer-to-not-say">Sparkling</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rating"
+                >Would you recommend FootBros to your freinds/family ?</label
+              >
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="never"
+                  value="never"
+                /><label for="never"> Never </label>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="maybe"
+                  value="maybe"
+                /><label for="maybe"> Maybe </label>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="likely"
+                  value="likely"
+                /><label for="likely"> Likely </label>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="definitely"
+                  value="definitely"
+                /><label for="definitely"> Definitely </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="liked"
+                >Select Things That You Liked About Our Product</label
+              >
+              <div class="checkbox-group">
+                <input type="checkbox" name="liked" id="ui" value="ui" /><label
+                  for="ui"
+                >
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+                  <span>Website</span>
+                </label>
+              </div>
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  name="liked"
+                  id="features"
+                  value="features"
+                /><label for="features">
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+                  <span>Benefits</span>
+                </label>
+              </div>
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  name="liked"
+                  id="service"
+                  value="service"
+                /><label for="service">
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+                  <span>Service</span>
+                </label>
+              </div>
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  name="liked"
+                  id="simpleness"
+                  value="simpleness"
+                /><label for="simpleness">
+                  <svg
+                    class="check-mark-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                  >
+                    <polyline
+                      class="check-mark-svg-path"
+                      points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                    />
+                  </svg>
+
+                  <span>Variety of choices</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="remark">Remarks</label>
+              <textarea
+                name="remark"
+                id="remark"
+                placeholder="Feel free to give Constructive criticism.."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <button id="submit" type="submit" style="border-radius: 19px">
+                Submit
+              </button>
+            </div>
+          </form>
+        </main>
+      </body>
+    </html>
+  </body>
+</html>

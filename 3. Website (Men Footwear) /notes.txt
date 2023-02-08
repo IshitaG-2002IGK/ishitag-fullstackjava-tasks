@@ -1,0 +1,33 @@
+
+Design a website with 5 webpages using HTML and CSS.
+
+1. Home Page (Display company recent awards and some news)
+2. About us page (Details about company)
+3. Contact us page (use forms to get customer name,email, phone number and message/complaint)
+4. Products page (Product images, price, buttons to click and buy which must redirect to payment  page with QR code/Google Pay/Bank account details.)
+You can sell any products in the category assigned. There must be atleast 3 sub categories and 10 products listed in each sub category. The categories is assigned in the sheet below. (edited) 
+
+https://docs.google.com/spreadsheets/d/1hgQhIBGiwHFdUUrBXhMQZTvQXdO2q_wEETPmcWaeRRM/edit#gid=0
+
+You can refer above link to know the projects categories.
+
+category : men normal footwear
+
+Survey - Survey form with all input types 
+
+
+#######
+
+To do:
+
+1) Home page - landing page (shoes hightlighting to be done)
+
+2) About us
+
+3) Contact us
+
+4) Products page
+
+5) Payment page 
+
+6) Survey page

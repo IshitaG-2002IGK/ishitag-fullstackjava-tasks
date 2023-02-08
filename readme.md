@@ -1,5 +1,13 @@
 ## Java Full stack assignments
 
-1) Portfolio Assignment (HTML)
+1) Assignment 1:
+        
+        Portfolio (HTML)
 
-2) Portfolio Assignment (HTML+CSS)
+2) Portfolio Assignment 2 
+
+        Portfolio (HTML + CSS)
+
+3) Website Assignment
+
+        Men's Footwear Website - FootBros (HTML+CSS)
