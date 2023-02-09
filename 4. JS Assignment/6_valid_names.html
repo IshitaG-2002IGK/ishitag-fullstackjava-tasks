@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const validate = (strs) => 
+      {
+        if 
+        (
+          strs.match("(^[A-Z]\. [A-Z][a-z]+$)|(^[A-Z]\. [A-Z]\. [A-Z][a-z]+)|(^[A-Z][a-z]+ [A-Z]\. [A-Z][a-z]+$)")
+        ) 
+        {
+          return " ";
+        } 
+        else return " ";
+      };
+
+      var a = "Herbert G. Wells";
+      let b = validate(a);
+
+      if (b.length > 0) 
+      {
+        console.log("true");
+      }
+      else 
+      {
+        console.log("false");
+      }
+    
+      // testing another possibility (invalid - false)
+
+      var x = "H Wells";
+      let y = validate(x);
+      if (y.length < 0) 
+      {
+        console.log("true");
+      }
+        
+      else 
+      {
+        console.log("false");
+      }
+        
+
+
+    </script>
+  </body>
+</html>
