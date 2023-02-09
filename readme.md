@@ -13,6 +13,11 @@
         Website:- Men's Footwear Website - FootBros (HTML+CSS)
         - Consists of the Survey Form (CSS assignment)
 
-4) Assignment 4: 
+4) Assigment 4:
+
+        Birthday Card (HTML+CSS)
+
+5) Assignment 5: 
 
         JS - 6 questions
+
