@@ -4,11 +4,15 @@
         
         Portfolio (HTML)
 
-2) Portfolio Assignment 2 
+2) Assignment 2: 
 
         Portfolio (HTML + CSS)
 
-3) Website Assignment
+3) Assignment 3:
 
-        Men's Footwear Website - FootBros (HTML+CSS)
+        Website:- Men's Footwear Website - FootBros (HTML+CSS)
         - Consists of the Survey Form (CSS assignment)
+
+4) Assignment 4: 
+
+        JS - 6 questions
