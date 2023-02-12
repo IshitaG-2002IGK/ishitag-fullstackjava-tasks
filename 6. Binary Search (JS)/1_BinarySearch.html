@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function BinarySearching(arr, x)
+        {
+            let left = 0;
+
+            let right = arr.length - 1;
+
+            let mid;
+            
+            while (right >= left) 
+            {
+                mid = left + Math.floor((right - left) / 2);  //getting the mid position
+    
+                if (a[mid] == x)
+                    return mid;
+
+                if (a[mid] > x)
+                    right = mid - 1;
+
+                else
+                    left = mid + 1;
+            }
+            return -1;
+        }
+        
+            a = new Array(2, 14, 35, 48, 67, 89, 90, 111); //arranging order (ascending)
+
+            x = 89;
+
+            n = a.length;
+
+            ans = BinarySearching(a, x);
+            
+            (ans == -1) ? document.write("Element's not present in the array'"): document.write ("Element is present in index position: " + ans);
+            
+    
+        </script>
+        
+</body>
+</html>
