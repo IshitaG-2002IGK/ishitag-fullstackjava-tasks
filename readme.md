@@ -21,3 +21,7 @@
 
         JS - 6 questions
 
+6) Assignment 6: 
+
+        Binary Search - JS
+
