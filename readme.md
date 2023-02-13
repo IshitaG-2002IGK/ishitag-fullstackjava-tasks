@@ -25,3 +25,7 @@
 
         Binary Search - JS
 
+7) Assignment 7: 
+
+        Website Recreation - Replica 
+        (Weekend Assignment)
