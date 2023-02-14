@@ -24,6 +24,8 @@
 6) Assignment 6: 
 
         Binary Search - JS
+        Concatenation - JS
+        Oddish or Evenish - JS
 
 7) Assignment 7: 
 
