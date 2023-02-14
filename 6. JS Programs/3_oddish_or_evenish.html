@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function oddishOrEvenish(num) 
+      {
+        // acc - accumulator variable, used in reduce method 
+        // sum = sum of the digits
+
+        const sum = num.toString().split("").reduce((acc, digit) => {
+            return acc + parseInt(digit);
+          }, 0);
+
+        return sum % 2 === 0 ? "Evenish" : "Oddish";
+      }
+    </script>
+  </body>
+</html>
