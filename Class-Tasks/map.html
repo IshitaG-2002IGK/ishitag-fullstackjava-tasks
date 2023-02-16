@@ -8,7 +8,7 @@
   </head>
   <body>
     <script>
-      var square = [1, 2, 3, 4, 5, undefined].map((value) =>
+      var square = [1, 2, 3, 4, 5, 6, undefined].map((value) =>
         Math.pow(value, 2)
       );
 
@@ -16,3 +16,17 @@
     </script>
   </body>
 </html>
+
+<!-- 
+    OUTPUT: 
+
+    1: 1
+    2: 4
+    3: 9
+    4: 16
+    5: 25
+    6: 36
+    NaN
+
+    [1, 4, 9, 16, 25, 36, NaN]
+ -->
