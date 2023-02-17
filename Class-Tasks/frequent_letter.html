@@ -1,0 +1,59 @@
+<!-- 
+    Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const countries = [
+        "Finland",
+        "Fiji",
+        "France",
+        "Germany",
+        "Greece",
+        "Greenland",
+        "Grenada",
+        "Guatemala",
+      ];
+
+      const initials = countries.map((country) => country[0].toUpperCase());
+      const counts = {};
+
+      initials.forEach((initial) => {
+        counts[initial] = (counts[initial] || 0) + 1;
+      });
+
+      const mostFrequent = Object.entries(counts).reduce(
+        (acc, [initial, count]) => 
+        {
+          if (count > acc.count) {
+            return { initial, count };
+          } else {
+            return acc;
+          }
+        },
+        
+        { initial: null, count: -1 }
+      );
+
+      console.log(
+        `The letter "${mostFrequent.initial}" is the most frequent initial for country names with a count of ${mostFrequent.count}.`
+      );
+    </script>
+  </body>
+</html>
+
+
+<!-- OUPUT:
+
+The letter "G" is the most frequent initial for country names with a count of 5.
+
+-->

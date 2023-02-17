@@ -1,0 +1,44 @@
+<!-- Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const countries = [
+        "Estonia",
+        "Finland",
+        "Sweden",
+        "Denmark",
+        "Norway",
+        "Iceland",
+      ];
+
+      const sentence = countries.reduce((acc, country, index) => 
+      {
+        if (index === 0) {
+          return `${country}`;
+        } else if (index === countries.length - 1) {
+          return `${acc}, and ${country}`;
+        } else {
+          return `${acc}, ${country}`;
+        }
+      }, "");
+
+      console.log(`${sentence} are north European countries`);
+    </script>
+  </body>
+</html>
+
+
+<!-- OUTPUT:
+
+Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
+
+-->
