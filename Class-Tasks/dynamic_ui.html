@@ -1,0 +1,76 @@
+
+<!-- Create a div container on HTML document and create 100 numbers dynamically and append to the container div. Put each number in 150px by 150px box. If the number is even the background will be lightgreen else lightblue.
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Numbers with Background Color</title>
+    <!-- <style>
+      .number-box {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 150px;
+      }
+      .lightgreen {
+        background-color: lightgreen;
+      }
+      .lightblue {
+        background-color: lightblue;
+      }
+    </style> -->
+
+  </head>
+  <body>
+    <body>
+        <div id="container"></div>
+        <script>
+          const container = document.getElementById("container");
+
+          const style = document.createElement("style");
+          style.innerHTML = `
+            .number-box 
+            {
+              width: 150px;
+              height: 150px;
+              display: inline-block;
+              text-align: center;
+              font-size: 24px;
+              font-weight: bold;
+              line-height: 150px;
+            }
+            .lightgreen 
+            {
+              background-color: lightgreen;
+            }
+            .lightblue 
+            {
+              background-color: lightblue;
+            }
+          `;
+          document.head.appendChild(style);
+          
+          // appending the numbers here - 100 
+
+          for (let i = 1; i <= 100; i++)
+          {
+            const numberBox = document.createElement("div");
+            numberBox.classList.add("number-box");
+            numberBox.textContent = i;
+            
+            if (i % 2 === 0) {
+              numberBox.classList.add("lightgreen");
+            } else {
+              numberBox.classList.add("lightblue");
+            }
+            
+            container.appendChild(numberBox);
+          }
+        </script>
+      </body>
+    </html>
