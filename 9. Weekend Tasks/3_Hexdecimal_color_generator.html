@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexadecimal Color Generator</title>
+
+    <style>
+      body 
+      {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        
+      }
+
+      h1 
+      {
+        margin-top: 50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+      }
+
+      #color-display 
+      {
+        font-size: 50px;
+        margin: 20px;
+      }
+
+      #generate-button 
+      {
+        font-size: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-image: linear-gradient( 179.2deg,  rgba(34,34,34,1) 0%, rgba(8,0,153,1) 29.7%, rgba(118,6,166,1) 63.4%, rgba(233,0,64,0.58) 100.1% );        color: white;
+        cursor: pointer;
+        border-radius: 20px;
+        margin-bottom: 20px;
+      }
+
+      p
+      {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Hexadecimal Color Generator</h1><br>
+    <p id="color-display">#000000</p><br><br>
+    <button id="generate-button"><b>Generate Color</b></button>
+
+    <script>
+      const generateButton = document.getElementById("generate-button");
+      const colorDisplay = document.getElementById("color-display");
+
+      function HexColorGenerator() 
+      {
+        const letters = "0123456789ABCDEF";
+        let hexColor = "#";
+        for (let i = 0; i < 6; i++) 
+        {
+          hexColor += letters[Math.floor(Math.random() * 16)];
+        }
+        return hexColor;
+      }
+
+      generateButton.addEventListener("click", () => 
+      {
+        const hexColor = HexColorGenerator();
+        colorDisplay.innerHTML = hexColor;
+        document.body.style.backgroundColor = hexColor;
+      });
+
+    </script>
+  </body>
+</html>

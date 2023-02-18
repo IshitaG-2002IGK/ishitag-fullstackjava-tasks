@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Click Demo</title>
+    <style>
+      body
+      {
+        background-image: url('bg.jpeg');
+        background-repeat: no-repeat;
+      }
+      img 
+      {
+        cursor: pointer;
+      }
+      h1
+      {
+        font-family:'Times New Roman', Times, serif;
+        font-size: 50px;
+        text-shadow: 0 0 3px #FFB84C, 0 0 5px black;        
+        padding-left: 37rem; 
+        padding-top: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="color:aliceblue">Peek-A-Boo</h1>
+    <div class="container" style="padding-left: 36.5rem; padding-top: 10rem;">
+
+      <img src="image1.png" onclick="changeImage()" id="myImage">
+
+    </div>
+
+    <script>
+      function changeImage() 
+      {
+        var image = document.getElementById('myImage');
+        if (image.src.match("image1")) {
+          image.src = "image2.png";
+        } else {
+          image.src = "image1.png";
+        }
+      }
+    </script>
+
+  </body>
+</html>
