@@ -31,3 +31,17 @@
 
         Website Recreation - Replica 
         (Weekend Assignment)
+
+8) Assignment 8: 
+
+        JS programs done in class
+
+9) Assignment 9: 
+
+        Weekend Tasks:
+
+                1) Peek-A-Boo (monkey website)
+                2) Button hovering - enlargening
+                3) Hexadecimal color generator
+                4) JS - Recreated website
+                
