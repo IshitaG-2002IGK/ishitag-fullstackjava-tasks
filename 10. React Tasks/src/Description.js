@@ -1,19 +1,30 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './style.css';
 // import Image from "./Image";
 
 function Description() {
   return (
     <>
-      <p> 
-      
-      <b>Make quick, immediate visual impressions on potential customers. Larger than brochures and flyers and smaller than billboards, posters that feature a compelling message and provocative design boast drawing power.</b>
-
+      <p>
+        <b>
+          Make quick, immediate visual impressions on potential customers.
+          Larger than brochures and flyers and smaller than billboards, posters
+          that feature a compelling message and provocative design boast drawing
+          power.
+        </b>
       </p>
 
+      <a href="https://react.school" target="_blank">
+        <button class="buttonsoup"> Click Me! </button>
+      </a>
+
       <div container>
-        <p><b>$ 500</b></p>
+        <p>
+          <b>$ 500</b>
+        </p>
       </div>
+
+   
     </>
   );
 

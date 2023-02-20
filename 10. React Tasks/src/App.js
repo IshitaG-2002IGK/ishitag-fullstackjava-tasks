@@ -1,11 +1,12 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './style.css';
 import Image from "./Image";
 
 function App() {
   return (
     <>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_n73__ntmKCngu3Lu_Iyp00ueT-VPliFGiQ&usqp=CAU" height="50px" width="50px"></img>
+
+    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_n73__ntmKCngu3Lu_Iyp00ueT-VPliFGiQ&usqp=CAU"></img>
       <h1> Welcome to Ishi's Posters!</h1>
       <Image/>
     </>
