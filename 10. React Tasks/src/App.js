@@ -7,7 +7,7 @@ function App() {
     <>
 
     <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_n73__ntmKCngu3Lu_Iyp00ueT-VPliFGiQ&usqp=CAU"></img>
-      <h1> Welcome to Ishi's Posters!</h1>
+      <h1 class="title"> Welcome to Ishi's Posters!</h1><br></br>
       <Image/>
     </>
   );

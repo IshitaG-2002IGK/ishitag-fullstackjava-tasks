@@ -5,10 +5,10 @@ import './style.css';
 function Description() {
   return (
     <>
-      <p>
+      <p class="desc">
         <b>
           Make quick, immediate visual impressions on potential customers.
-          Larger than brochures and flyers and smaller than billboards, posters
+          Larger than brochures and flyers and smaller than billboards, posters<br></br>
           that feature a compelling message and provocative design boast drawing
           power.
         </b>
@@ -20,7 +20,7 @@ function Description() {
 
       <div container>
         <p>
-          <b>$ 500</b>
+          <b class="price">$ 500</b>
         </p>
       </div>
 

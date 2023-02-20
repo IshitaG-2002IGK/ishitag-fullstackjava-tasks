@@ -1,16 +1,41 @@
 .logo{
     height:100px;
     width:100px;
-    padding-left: 85rem;
+    /* padding-left: 20rem; */
 }
 
+.desc
+{
+    padding-left:15rem;
+}
+
+.price
+{
+    font-size: 25px;
+    padding-left: 46rem;
+}
+
+
+.poster_image
+{
+    padding-left:35rem;
+    
+}
 .buttonsoup
 {
     background-color: black;
   color: white;
   font-size: 20px;
-  padding: 10px 60px;
-  border-radius: 5px;
-  margin: 10px 0px;
+  padding: 10px 100px;
+  /* padding-left:35rem; */
+  border-radius: 20px;
+  margin: 20px 645px;
   cursor: pointer;
+}
+
+.title
+{
+    align-items:center;
+    padding-left: 35rem;
+    padding-top:-10rem;
 }
