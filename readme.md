@@ -45,3 +45,14 @@
                 3) Hexadecimal color generator
                 4) JS - Recreated website
                 
+10) Assignment 10: 
+
+        In class tasks:
+
+                -> Added several components - Products page
+
+11) Assignment 11:
+
+        React JS task:
+
+                -> Shape functions, classes and printing results of various formulae.
