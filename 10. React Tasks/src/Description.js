@@ -14,7 +14,7 @@ function Description() {
         </b>
       </p>
 
-      <a href="https://react.school" target="_blank">
+      <a href="https://www.redbubble.com/shop/gallery+posters" target="_blank">
         <button class="buttonsoup"> Click Me! </button>
       </a>
 
