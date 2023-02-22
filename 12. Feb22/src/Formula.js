@@ -38,11 +38,11 @@ class Formula extends React.Component{
 
         render(){
 
-            var sum = this.state.a * this.state.b * this.state.c + this.state.d ;
+            var sumMul = this.state.a * this.state.b * this.state.c + this.state.d ;
 
                 return(
                         <>
-                        <h1>Answer: {sum}</h1>
+                        <h1>Answer: {sumMul}</h1>
                         <button onClick={this.changeVal}>Click Here</button>
                         <br></br><br></br>
 
