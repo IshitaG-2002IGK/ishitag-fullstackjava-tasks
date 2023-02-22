@@ -56,3 +56,9 @@
         React JS task:
 
                 -> Shape functions, classes and printing results of various formulae.
+
+12) Assignment 12:
+
+        React JS task:
+
+                -> State change for several formulas of shapes
