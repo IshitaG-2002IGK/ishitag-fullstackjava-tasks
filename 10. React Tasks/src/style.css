@@ -21,17 +21,32 @@
     padding-left:35rem;
     
 }
-.buttonsoup
+.add_button
 {
-    background-color: black;
+  background-color: black;
   color: white;
   font-size: 20px;
-  padding: 10px 100px;
+  padding: 10px 60px;
   /* padding-left:35rem; */
   border-radius: 20px;
-  margin: 20px 645px;
+  margin: 20px 520px;
+  margin-left:290px;
   cursor: pointer;
 }
+
+.remove_button
+{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 40px;
+  /* padding-left:20rem; */
+  border-radius: 20px;
+  margin: 5px 100px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 
 .title
 {

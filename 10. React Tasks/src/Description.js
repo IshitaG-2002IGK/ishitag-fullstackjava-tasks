@@ -15,8 +15,14 @@ function Description() {
       </p>
 
       <a href="https://www.redbubble.com/shop/gallery+posters" target="_blank">
-        <button class="buttonsoup"> Click Me! </button>
+        <button class="add_button"> Add </button>
       </a>
+
+      <a href="https://www.redbubble.com/shop/gallery+posters" target="_blank">
+        <button class="remove_button"> Remove</button>
+      </a>
+
+
 
       <div container>
         <p>
