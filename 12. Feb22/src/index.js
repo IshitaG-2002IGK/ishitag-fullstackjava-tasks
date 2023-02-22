@@ -6,13 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import Cube from './Cube';
 import Formula from './Formula';
 import Lifecycle from './Lifecycle';
+import Lifecyclecomp from './Lifecyclecomp';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Cube/> */}
     {/* <Formula/>  */} 
-    <Lifecycle a="5"/>
+    {/* <Lifecycle a="5"/> */}
+    <Lifecyclecomp a="6"/>
   </React.StrictMode>
 );
 

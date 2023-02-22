@@ -5,7 +5,7 @@ class Lifecycle extends React.Component{
         constructor(props){
                 super(props);
                 this.state={
-                        number:5
+                        number : 6
                 };
         }
 
@@ -53,18 +53,23 @@ class Lifecycle extends React.Component{
 
         changeNum=()=>{
             
-            this.setState({number:4});
+            this.setState({number:10});
         }
 
 
         render(){
 
                 // this.forceUpdate();
+
                 return(
                         <div>
+
                         <h1>LifeCycle Component Phases</h1>
                         <button onClick={this.changeNum}>Click here</button>
                         <h1>{this.state.number}</h1>
+                        <h1>Sum: {this.state.number + this.state.number}</h1>
+                        <h1>Multiplication: {this.state.number * this.state.number }</h1>
+
                         </div>
                 );
         }
