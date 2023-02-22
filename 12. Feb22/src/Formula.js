@@ -13,17 +13,24 @@ class Formula extends React.Component{
 
         changeVal=()=>{
                 // this.setState({a:"10"}); 
+                this.setState({a:"1"});
+
+        }
+
+
+        changeVals=()=>{
+                // this.setState({a:"10"}); 
                 this.setState({b:"5"});
 
         }
 
-        changeVals=()=>{
+        changeValss=()=>{
 
                 this.setState({c:"6"});
 
         }
 
-        changeValss=()=>{
+        changeValsss=()=>{
 
             this.setState({d:"2"});
 
@@ -35,19 +42,22 @@ class Formula extends React.Component{
 
                 return(
                         <>
+                        <h1>Answer: {sum}</h1>
                         <button onClick={this.changeVal}>Click Here</button>
-                        <h1>{sum}</h1>
+                        <br></br><br></br>
 
                         <button onClick={this.changeVals}>Click Here</button>
-                        {/* <h1>{sum}</h1> */}
+                        <br></br><br></br>
+
 
                         <button onClick={this.changeValss}>Click Here</button>
-                        {/* <h1>{sum}</h1> */}
+                        <br></br><br></br>
+
+                        <button onClick={this.changeValsss}>Click Here</button>
+                        <br></br><br></br>
+
+            
     
-
-
-
-
                         </>
                 );
         }
