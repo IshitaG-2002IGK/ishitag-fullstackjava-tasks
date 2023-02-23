@@ -5,6 +5,8 @@ import './Description.css';
 import './Image.css';
 import App from './App';
 import Description from './Description';
+import Product from './Product';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,7 @@ root.render(
   <React.StrictMode>
     <App />
     <Description />
+    <Product />
     </React.StrictMode>
 );
 

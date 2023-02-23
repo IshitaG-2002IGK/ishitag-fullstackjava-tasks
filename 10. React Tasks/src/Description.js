@@ -14,13 +14,13 @@ function Description() {
         </b>
       </p>
 
-      <a href="https://www.redbubble.com/shop/gallery+posters" target="_blank">
+      {/* <a href="https://www.redbubble.com/shop/gallery+posters" target="_blank">
         <button class="add_button"> Add </button>
       </a>
 
       <a href="https://www.redbubble.com/shop/gallery+posters" target="_blank">
         <button class="remove_button"> Remove</button>
-      </a>
+      </a> */}
 
 
 
