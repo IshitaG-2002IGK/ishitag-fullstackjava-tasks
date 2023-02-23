@@ -50,6 +50,7 @@
         In class tasks:
 
                 -> Added several components - Products page
+                -> Added 2 buttons - to add and remove products
 
 11) Assignment 11:
 
@@ -62,3 +63,4 @@
         React JS task:
 
                 -> State change for several formulas of shapes
+                -> Lifecycle components
