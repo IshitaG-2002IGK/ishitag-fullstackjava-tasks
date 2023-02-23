@@ -26,7 +26,7 @@ function Description() {
 
       <div container>
         <p>
-          <b class="price">$ 500</b>
+          <b class="price">Poster Cose: $10</b>
         </p>
       </div>
 

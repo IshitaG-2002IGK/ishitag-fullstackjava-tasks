@@ -20,8 +20,8 @@ function Product() {
   return (
     <div class="product">
       {/* <h1 class="product_title"><b>Product</b></h1> */}
-      <p><b>Quantity:</b> {quantity}</p>
-      <p><b>Price:</b> {price}</p>
+      <p><b>Quantity: $</b> {quantity}</p>
+      <p><b>Price: $</b> {price}</p>
       <button onClick={handleAddProduct}><b>Add Product</b></button>
       <button onClick={handleRemoveProduct}><b>Remove Product</b></button>
     </div>
