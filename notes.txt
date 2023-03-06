@@ -335,3 +335,23 @@ class Lifecycle extends React.Component{
 }
 
 export defualt Lifecycle;
+
+
+
+---------------------------------------------------------------
+
+function USESTATE() {
+    const[inc, useInc] = useState(0);
+    useInc(){
+        inc:inc+1
+    };
+    return (
+        <div>
+            <p>{inc}</p>
+            <button onClick={useInc}>CLick</button>
+        </div>
+
+    )
+}
+
+export default USESTATE

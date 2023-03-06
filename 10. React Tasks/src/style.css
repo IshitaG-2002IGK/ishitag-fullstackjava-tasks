@@ -6,7 +6,7 @@
 
 .desc
 {
-    padding-left:15rem;i
+    padding-left:15rem;
 }
 
 .price
@@ -103,4 +103,30 @@
 
   .products{
     align-items: center;
+  }
+
+
+  .productpage{
+    padding-left: 25rem;
+  }
+
+  .product-page-price{
+
+    padding-left: 19rem;
+
+  }
+
+  .product-page-quantity{
+    
+    padding-left: 19rem;
+
+  }
+
+  .button-dec{
+
+    padding-left:5rem;
+  }
+
+  .button-inc{
+
   }

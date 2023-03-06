@@ -6,6 +6,7 @@ import './Image.css';
 import App from './App';
 import Description from './Description';
 import Product from './Product';
+import ProductPage from './ProductPage';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -15,6 +16,7 @@ root.render(
     <App />
     <Description />
     <Product />
+    <ProductPage />
     </React.StrictMode>
 );
 
