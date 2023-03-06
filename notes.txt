@@ -1,0 +1,337 @@
+TRAINING - FULL STACK JAVA
+
+// Day 1:
+
+
+Internet 
+Internet protocol suite
+- TCP/IP
+- FTP
+- HTTP
+- HTTPS
+
+
+Website
+Web server
+
+
+How is info stored — on web (hosting)
+
+-IP
+URL
+
+Latest version of HTML -5
+
+
+- External data in HTML docs 
+- problem with file basd websites
+
+Intranet - restricted
+
+Internet - public
+
+Client and server:
+
+The client–server model is a distributed
+application structure that partitions tasks
+or workloads between the providers of a resource or service, 
+called servers, and service requesters, called clients.
+
+- How is the information transferred?
+        - server/ client end
+
+HTML - css - js 
+
+- styling - functionality
+
+cookies - data stored in server side 
+
+Local storage - only local browser dise, data is available.
+
+Request to server side using GET and POST
+
+
+------------------------------------------------------------------------------
+
+// Day 2:
+
+CSS
+
+SCSS
+Syntactically different, but an extension of CSS
+Closely associated with Ruby 
+SASS
+Closely following Syntax
+Used for Server side css etc
+
+Types of CSS:
+External, Internal and Inline
+
+Readability
+
+Color, font-family, font-weight, font-size, padding, padding-left, padding-right, margin, font-variant, border, border-style: dotted,
+Letter-spacing, word spacing, 
+
+Padding - Space between the text and the boundary
+
+Selectors
+Universal selector, id selector, class selector, group selector
+
+
+-----------------------------------------------------------------------------------------
+
+// Day 3:
+
+
+Tags noted down:
+
+1) <article>
+
+2) <aside>
+
+3) <address>
+
+4) <bdi> 
+        - specific direction
+        - content must be displaced
+        - <p dir="ltr">  (left to right)
+        - <p dir="rtl">  (right to left)
+
+5) <p dir ="auto" >    
+
+        - automatic display
+
+6) image display Tags
+
+        - <caption> - caption for the image 
+
+7) <p contenteditable="false">
+<p contenteditable="true">
+
+8) <input type="text" name ="simpletext" spellcheck="true">
+
+9) data tag:
+
+<data value="">
+
+10) autofill tag - in forms
+
+
+11) <data list=>
+<datalist id="college">
+<option value=""> 
+</datalist>
+
+
+12) iframe width tag:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+~ Embedding audio and video tags ~
+
+- image
+- videos
+- documents
+
+To do: Webpage only using all the tags
+
+(in the wbepages)
+
+
+13) summary - tag
+14) detail - tag
+
+
+------------------------------------------------------------------------------
+
+
+CSS:
+
+<button class="buttonmove">move</button>
+
+
+transform : translateY(10px);
+- to move button up and down
+
+transform : translateX(10px);
+- to move button sideways
+
+Rotate the button - transitions:
+
+transition: width 5s, height 10s, background-color 3s, transform 2s;
+
+
+Buffering buttons:
+
+loading sign buttons
+
+Hovering:
+
+bar: hover 
+{
+        width:200px;
+}
+
+transition-timing-function = linear
+
+-----------------------------------------------------------
+
+
+keyframes:
+
+@keyframes application{
+        from {bacakground-color:black}
+        {backgorund-color:green;}
+}
+
+
+
+Animations:
+
+animaton tags
+
+Create a birthday card witht the photo of any celebrity and give effects and ballons and other elements to celebrate
+
+
+-------------------------------------------------------------
+
+
+CSS flex and grid layout
+
+css grid layout:
+
+- fundamentals
+- easy tool of creation
+- gives structure of entire document 
+- both rows and columns
+2 dimensional
+
+css flex layout:
+
+- methods to align eleent layout
+- either rows or columns
+- 1 demnsional
+
+flex wrap:
+
+- horizontally
+
+
+Flex box:
+
+display: flex1
+
+
+----------------------------------------------------
+
+Javascript:
+
+20/02/23
+
+React JS 
+
+- JS Library 
+- Real vs Virual DOM
+
+
+function A(){return (<h1>Hi</h1>)}
+function A(){return (<h1>Hi</h1>)}
+<h1>Hi</h1><B/>
+
+----------------------------------------------------
+
+import React from "react";
+
+class Pcube extends React.Component{
+        constructor(props){
+                super(props);
+                this.state={
+                        r:2, 
+                        b:3, 
+                        h:5, 
+                        pi:3.14
+                 };
+        }
+        changePi=()=>{
+                this.setState({pi:"5"}); //
+                this.setState({r:"5", b:"2", h:"6"});
+
+
+        }
+        render(){
+
+                var side  = this.props.s;
+                var peri=12*side;
+        
+                return(
+                        <>
+                        <button onlick={this.changePi}>Click Here</button>
+                        <h1>{this.state.pi * this.state.r * this.state.b * this.state.h}</h1>
+                        </>
+                );
+        }
+        
+}
+
+export default Pcube;
+
+
+
+-------------------------------------------------------------
+
+Life cycle of components:
+
+Three Phases-
+
+1) Mounting
+
+        - making a component ready 
+        a) consturctor()
+        b) getDerivedStateFromProps()
+        c) render()
+        d) componentDidMount()
+
+  
+2) Updating
+
+        - Optional Phases
+        - Sub phases (or) sub methods
+
+        a) getDerivedStateFromProps()
+        b) shouldComponentUpdate()
+        c) render()
+        d) getSnapshotBeforeUpdate()
+        e) componentDidUpdate()
+
+
+3) Unmounting
+
+        - componentWillUnmount()
+
+
+-------------------------------------------------------
+
+
+lifecyle.js 
+
+import React from 'react';
+
+class Lifecycle extends React.Component{
+
+        constructor(){
+                super(props);
+                this.state={
+                        number:4
+                };
+        }
+        componentDidMount(){
+                console.log("Lifecycle component is mounted!");
+        }
+        render(){
+                return(
+                        <h1>Hi</h1>
+                );
+        }
+}
+
+export defualt Lifecycle;
