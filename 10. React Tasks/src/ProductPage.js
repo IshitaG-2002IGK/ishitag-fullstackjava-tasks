@@ -1,5 +1,4 @@
-// Create a product page with quantity increase/decrease buttons
-// On click of the button the price and quantity must increase or decrease accordingly. Use only hooks and function component. You can refer syntax online for hooks but don't copy paste
+// On click of the button the price and quantity must increase or decrease accordingly (hooks concept)
 
 import React, { useState } from 'react';
 import './style.css';
