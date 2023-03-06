@@ -25,8 +25,12 @@ function ProductPage() {
       <h1>Product Additon/Deletion - using hooks concepts</h1>
       <p class="product-page-price"><b>Price: $</b>{price}</p>
       <p class="product-page-quantity"><b>Quantity:</b> {quantity}</p>
+
+      <div class="button-inc-dec">
       <button class="button-dec" onClick={handleDecrease}>-</button>
       <button class="button-inc" onClick={handleIncrease}>+</button>
+      </div>
+      
     </div>
   );
 }
