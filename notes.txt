@@ -364,23 +364,42 @@ import React, { Component   } from 'react'
 export default class HelloClass extends Component {
         constructor(){
 
+                super();
                 this.state = {
                         count:0
                 }
         }
 
-        handleCount(){
+        //state ={
+        //        count:0
+        //}
 
+        handleCount()=>{
+
+                this.setState({count:this.state.count+1})
                 
         }
 
         render(){
                 return (
                         <div>
-                                <button onClick={this.handleCount}Counter</button>
+                               // <button onClick={this.handleCount()}Counter</button>
+                               <button onClick={this.handleCount}Counter:{this.state.count}</button>
                         </div>
                 )
         }
 }
 
-xyz = {}
+//xyz = {}
+// 1. function vs methods
+// 2. difference between arrow and normal function
+// 3. when to use constructor and super
+
+## app.js
+
+function App(){
+        return  (
+                <div className="App">
+                <HelloClass />
+        )
+}
