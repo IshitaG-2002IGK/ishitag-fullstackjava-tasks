@@ -88,3 +88,12 @@
 
                 -> Toggle button activation
                 -> Alert PopUp
+
+14) Assginment 14:
+
+        React JS - Routing Basics
+
+                -> Routing basics - navigation
+                -> Home, Contact and About us pages naviagations - link and routes
+                -> <BrowserRouter>
+                -> react-router-dom installation
