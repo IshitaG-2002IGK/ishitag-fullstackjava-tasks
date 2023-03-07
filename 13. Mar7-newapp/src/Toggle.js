@@ -11,10 +11,18 @@ const Toggle = () => {
       <button 
             onClick={() => setToggle(!toggle)}> Toggle Button
       </button>
+      
+      {/* Method 1: */}
       {toggle && 
       (
         <p><b>Toggle button activated!</b></p>
       )}
+
+      {/* Method 2: */}
+
+      {/* {
+        toggle? <p><b>Toggle button activated!</b></p>: null
+      } */}
     </>
   )
 }
