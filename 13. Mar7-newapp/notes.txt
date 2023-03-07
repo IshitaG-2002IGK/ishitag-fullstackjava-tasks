@@ -57,3 +57,31 @@ toggle
 
 you toggled - pop showed 
 
+--------------------------------------------------
+
+Toggles:
+
+import { useEffect, useState } from "react";
+
+function App() {
+  const [count ,setCount]=useState(0)
+  const [toogle ,setToogle]=useState(false)
+
+  useEffect(()=>{
+    console.log("hi");
+   if(toogle === true){
+    window.alert("toogles");
+    setToogle(false);
+   }
+  },[toogle]);
+
+  return (
+
+     <>
+     <button onClick={()=>{setCount(count+1)}}>Count{count}</button>
+     <button onClick={()=>{setToogle(true)} }>Toogle</button>
+     </>
+  );
+}
+
+export default App;
