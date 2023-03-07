@@ -67,3 +67,10 @@
 
                 -> State change for several formulas of shapes
                 -> Lifecycle components
+
+13) Assignment 13:
+
+        React JS task:
+
+                -> Inclass activity
+                -> constructor, thisstate - counter function
