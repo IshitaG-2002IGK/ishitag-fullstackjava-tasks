@@ -13,6 +13,7 @@ const Toggle = () => {
       </button>
       
       {/* Method 1: */}
+      
       {toggle && 
       (
         <p><b>Toggle button activated!</b></p>
@@ -22,7 +23,9 @@ const Toggle = () => {
 
       {/* {
         toggle? <p><b>Toggle button activated!</b></p>: null
-      } */}
+      } */
+      }
+
     </>
   )
 }
