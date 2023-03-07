@@ -10,7 +10,7 @@ export default function HelloCounter() {
   }
   return (
     <div>
-        <button onClick={handleCount}>Counter:{count}</button>
+        <button onClick={handleCount}>Counter:{count}</button><br></br>
     </div>
   )
 }
