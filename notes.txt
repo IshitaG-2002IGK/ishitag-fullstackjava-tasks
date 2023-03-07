@@ -355,3 +355,32 @@ function USESTATE() {
 }
 
 export default USESTATE
+
+
+-------------------------------------------------------------
+
+import React, { Component   } from 'react' 
+
+export default class HelloClass extends Component {
+        constructor(){
+
+                this.state = {
+                        count:0
+                }
+        }
+
+        handleCount(){
+
+                
+        }
+
+        render(){
+                return (
+                        <div>
+                                <button onClick={this.handleCount}Counter</button>
+                        </div>
+                )
+        }
+}
+
+xyz = {}

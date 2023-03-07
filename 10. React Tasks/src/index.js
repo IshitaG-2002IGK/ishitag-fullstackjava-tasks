@@ -7,6 +7,7 @@ import App from './App';
 import Description from './Description';
 import Product from './Product';
 import ProductPage from './ProductPage';
+import VideoPlayer from './VideoPlayer';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -17,6 +18,7 @@ root.render(
     <Description />
     <Product />
     <ProductPage />
+    <VideoPlayer />
     </React.StrictMode>
 );
 
