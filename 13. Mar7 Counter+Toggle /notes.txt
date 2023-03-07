@@ -1,0 +1,87 @@
+
+import React, { Component   } from 'react' 
+
+export default class HelloClass extends Component {
+        constructor(){
+
+                super();
+                this.state = {
+                        count:0
+                }
+        }
+
+        //state ={
+        //        count:0
+        //}
+
+        handleCount()=>{
+
+                this.setState({count:this.state.count+1})
+                
+        }
+
+        render(){
+                return (
+                        <div>
+                               // <button onClick={this.handleCount()}Counter</button>
+                               <button onClick={this.handleCount}Counter:{this.state.count}</button>
+                        </div>
+                )
+        }
+}
+
+--------------------------------------------------------
+
+//xyz = {}
+// 1. function vs methods
+// 2. difference between arrow and normal function
+// 3. when to use constructor and super
+
+## app.js
+
+function App(){
+        return  (
+                <div className="App">
+                <HelloClass />
+        )
+}
+
+--------------------------------------------------
+
+Task:
+
+toggle button - name it anything
+
+counter 
+toggle 
+
+you toggled - pop showed 
+
+--------------------------------------------------
+
+Toggles:
+
+import { useEffect, useState } from "react";
+
+function App() {
+  const [count ,setCount]=useState(0)
+  const [toogle ,setToogle]=useState(false)
+
+  useEffect(()=>{
+    console.log("hi");
+   if(toogle === true){
+    window.alert("toogles");
+    setToogle(false);
+   }
+  },[toogle]);
+
+  return (
+
+     <>
+     <button onClick={()=>{setCount(count+1)}}>Count{count}</button>
+     <button onClick={()=>{setToogle(true)} }>Toogle</button>
+     </>
+  );
+}
+
+export default App;
