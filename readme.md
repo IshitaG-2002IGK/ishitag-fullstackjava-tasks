@@ -70,10 +70,12 @@
 
 13) Assignment 13:
 
-        React JS task:
+        React JS task: (March 7th)
 
-                -> Inclass activity
+                -> Inclass activity : counter incrementation
                 -> constructor, thisstate - counter function
+
+                Class discussion:
 
                 1. function vs method
                 2. difference between arrow and normal funct
@@ -83,3 +85,5 @@
                 6. first class citizens
                 7. Virtual DOM
                 8. useState, useEffect, useMemo, useContext
+
+                -> Toggle button activation
