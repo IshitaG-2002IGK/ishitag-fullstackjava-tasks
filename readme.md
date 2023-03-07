@@ -51,6 +51,9 @@
 
                 -> Added several components - Products page
                 -> Added 2 buttons - to add and remove products
+                -> Same product page - hooks concept
+                -> Video pausing and replaying code segment 
+        
 
 11) Assignment 11:
 
