@@ -87,3 +87,4 @@
                 8. useState, useEffect, useMemo, useContext
 
                 -> Toggle button activation
+                -> Alert PopUp
