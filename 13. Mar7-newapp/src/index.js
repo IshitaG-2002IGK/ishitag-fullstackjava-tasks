@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import HelloClassSimple from './HelloClassSimple';
 import HelloCounter from './HelloCounter';
 import Toggle from './Toggle';
+import ToggleNew from './ToggleNew';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +15,9 @@ root.render(
     {/* <App /> */}
     <HelloClass /><br></br>
     <HelloClassSimple /><br></br>
-    <HelloCounter />
-    <Toggle />
+    <HelloCounter /><br></br>
+    {/* <Toggle /> */}
+    <ToggleNew /><br></br>
   </React.StrictMode>
 );
 
