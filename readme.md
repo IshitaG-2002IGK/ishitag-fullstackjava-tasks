@@ -74,3 +74,12 @@
 
                 -> Inclass activity
                 -> constructor, thisstate - counter function
+
+                1. function vs method
+                2. difference between arrow and normal funct
+                3. constructor vs super vs this - when to use it
+                4. binding of method - bind
+                5. why props?
+                6. first class citizens
+                7. Virtual DOM
+                8. useState, useEffect, useMemo, useContext
